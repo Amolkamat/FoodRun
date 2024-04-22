@@ -1,0 +1,26 @@
+.header-set {
+  background-color: #15900A;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+.top-list-settings {
+  color: #ffffff;
+  list-style-type: none;
+
+  li {
+    float: left;
+    padding: 8px 0 0 25px;
+  }
+}
+
+.logo {
+  width: 182px;
+  height: 46px;
+}
+
+.text-in-header {
+  display: flex;
+  justify-content: end;
+  align-items: flex-end;
+}
