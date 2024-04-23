@@ -1,14 +1,13 @@
 import { Component, OnChanges, OnInit, SimpleChanges } from '@angular/core';
 import { ToplistService } from '../services/toplist.service';
-import { NgIf } from '@angular/common';
+import { CommonModule, NgIf } from '@angular/common';
 
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [],
+  imports: [NgIf, CommonModule],
   templateUrl: './header.component.html',
-  styleUrl: './header.component.scss',
-  imports: [NgIf]
+  styleUrl: './header.component.scss'
 })
 export class HeaderComponent implements OnInit, OnChanges{
   title = 'FoodRun';
