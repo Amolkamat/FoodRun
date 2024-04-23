@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { ToplistService } from '../../services/toplist.service';
 
 @Component({
   selector: 'app-home',
@@ -7,6 +8,17 @@ import { Component } from '@angular/core';
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
 })
-export class HomeComponent {
+export class HomeComponent implements OnInit {
+
+  constructor(public Toplist: ToplistService) {}
+
+  ngOnInit() {
+    this.changeTL();
+  }
+
+  changeTL() {
+    this.Toplist.setTL(1);
+  }
+
 
 }
